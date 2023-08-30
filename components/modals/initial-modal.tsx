@@ -68,7 +68,7 @@ export const InitialModal = () => {
 			<DialogContent className='bg-white p-0 text-black overflow-hidden'>
 				<DialogHeader className='pt-8 px-6'>
 					<DialogTitle className='text-center text-2xl font-bold'>
-						Costomize your server
+						Customize your server
 					</DialogTitle>
 					<DialogDescription className='text-center text-zinc-500'>
 						Give your server a name and an icon. You can always
