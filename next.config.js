@@ -1,4 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+	images: {
+		domains: ['uploadthing.com'],
+	},
+	webpack: (config) => {
+		config.externals.push({
+			'utf-8-validate': 'commonjs itf-8-validate',
+			bufferutil: 'commonjs bufferutil',
+		});
 
-module.exports = nextConfig
+		return config;
+	},
+};
+
+module.exports = nextConfig;
